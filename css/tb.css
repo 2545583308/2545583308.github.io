@@ -1,0 +1,49 @@
+.loadding { width: 100%; line-height: 30px; margin-top: -15px; font-size: 20px; color: #333; text-align: center; position: fixed; top: 50%; }
+.loadding.on { display: none; }
+.new-footer { display: -webkit-box; width: 100%; height: 50px; position: fixed; left: 0; bottom: 0; z-index: 500; background: #fff; text-align: center; overflow: hidden;border-top: 1px solid #c2c2c2; }
+.new-footer .new-user, .new-footer .new-share, .new-footer .activity{ display: block; position: relative; width: 80px; padding-top: 28px; font-size: 13px; color: #666666; border-right: 1px solid #d8d8d8; }
+.new-footer .new-love { position: relative; width: 80px; padding-top: 2px; font-size: 13px; color: #666666; border-right: 1px solid #d8d8d8; }
+.new-footer .new-user:after { content: ''; width: 16px; height: 16px; margin-left: -8px; background: url(../img/botton_d/a4.png) no-repeat; background-size: 100%; position: absolute; top: 8px; left: 50%; z-index: 500; }
+.new-footer .new-share:after { content: ''; width: 16px; height: 16px; margin-left: -8px; background: url(../img/botton_d/a6.png) no-repeat; background-size: 100%; position: absolute; top: 8px; left: 50%; z-index: 500; }
+.new-footer .activity:after{content: ''; width: 20px; height: 20px; margin-left: -12px; background: url(../img/botton_d/a9.png) no-repeat; background-size: 100%; position: absolute; top: 5px; left: 50%; z-index: 500; }
+.new-footer .new-buy {flex: 1; -webkit-box-flex: 1; line-height: 50px; background: #fc152e; font-size: 16px; color: #ffffff;cursor: pointer; }
+.new-footer .wxpay{flex: 1;-webkit-box-flex:1;line-height:50px;background:#0cb30e;font-size:16px;color:#ffffff;}
+.btn-lyl{flex: 1; -webkit-box-flex: 1; line-height: 50px; background: #26ca28; font-size: 16px; color: #ffffff;cursor: pointer; }
+
+.wxdwx-mask, .wxdwx-mask2 { display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); position: fixed; left: 0px; top: 0px; z-index: 501; }
+.wxdwx-mask2 { background: rgba(0, 0, 0, 0.8); }
+.popup { display: none; width: 260px; height: 280px; margin: -130px 0 0 -140px; border-radius: 5px; background: #fff; position: fixed; left: 50%; top: 50%; z-index: 502; }
+.wxdwx-mask.on, .wxdwx-mask2.on, .popup.on { display: block; }
+.popup .close { overflow: hidden; }
+.popup .close span { float: right; display: block; width: 14px; height: 14px; background: url("../img/Pay-close.png") 5px 10px no-repeat; padding: 8px; }
+.popup > header { width: 230px; margin: 0 auto; font-size: 20px; color: #333333; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.popup > em { display: block; width: 162px; height: 162px; margin: 15px auto; }
+.popup > em img { width: 100%; height: 100%; vertical-align: middle; }
+.popup > p { font-size: 16px; color: #666666; text-align: center; }
+.wxdwx-new-mask-browser, .wxdwx-new-mask-share { display: none; width: 210px; height: 165px; position: fixed; top: 15px; right: 50px; z-index: 502; }
+.wxdwx-new-mask-browser.on, .wxdwx-new-mask-share.on { display: block; }
+.new-mask-arrow { width: 70px; height: 80px; margin-left: 140px; background: url(../img/new-arrow.png) no-repeat; background-size: 100%; }
+.new-mask-tip { width: 162px; height: 80px; margin-top: 15px; font-size: 18px; color: #ffffff; text-align: center; }
+
+#content { padding-bottom: 50px; }
+.botton_d { width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; position: fixed; height: 48px; bottom: 0; left: 0; text-align: center; z-index: 999; background-color: #fff; }
+.botton_d .active-contact { width: 23%; line-height: 25px; border-right: 1px #d9d9d9 solid; border-top: 1px #d9d9d9 solid; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.botton_d .active-contact .icon { background-image: url(../img/botton_d/a4.png); background-size: 18px 18px; width: 18px; height: 18px; }
+.botton_d a { color: #333; text-decoration: none; }
+.botton_d .toggle-collect { display: none; width: 15%; line-height: 25px; border-right: 1px #d9d9d9 solid; border-top: 1px #d9d9d9 solid; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.botton_d .toggle-collect .icon { background-image: url(../img/botton_d/a3.png); background-size: 18px 18px; width: 18px; height: 18px; }
+.botton_d .icon { display: block; margin-left: auto; margin-right: auto; margin-top: 6px; }
+.botton_d .go-store { width: 23%; line-height: 27px; border-right: 1px #d9d9d9 solid; border-top: 1px #d9d9d9 solid; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 13px; }
+.botton_d .go-store .icon { background-image: url(../img/botton_d/a6.png); background-size: 18px 18px; width: 18px; height: 18px; }
+.botton_d .add-to-cart { width: 24%; color: #000000; border-right: 1px #d9d9d9 solid; border-top: 1px #d9d9d9 solid; }
+.botton_d .buy-now { width: 30%; background-color: #ff5000; color: #fff; line-height: 48px; }
+.botton_d #bottom-cart-entrance .icon { background-image: url(../img/botton_d/a5.png); background-size: 18px 18px; width: 18px; height: 18px; display: inline-block; }
+.android_tc { min-width: 240px; z-index: 123; position: absolute; top: 38%; left: 17%; background-color: #fff; font-size: 14px; border-radius: 3px; }
+
+
+.android_tc_1 { padding: 20px 15px; line-height: 22px; text-align: center; }
+.android_tc_2 { position: relative; height: 40px; line-height: 40px; font-size: 0; text-align: center; border-top: 1px solid #EBEBEB; }
+.android_tc_2 span { width: 42%; text-align: center; font-size: 14px; cursor: pointer; border-radius: 0 3px 0 0; display: inline-block; }
+.bg_a_app { position: fixed; width: 100%; height: 100%; background: #000; z-index: 101; top: 0; left: 0; opacity: 0.7; }
+
+.kcjszc_div{text-align: center;background-color:#ffffff;font-size:12px;padding:20px 0px 70px 0px; display: none;}

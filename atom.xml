@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ilovexy</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://ilovexy.xyz/"/>
+  <updated>2020-03-30T13:27:59.974Z</updated>
+  <id>https://ilovexy.xyz/</id>
+  
+  <author>
+    <name>Huaiqiu Wu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一篇博客</title>
+    <link href="https://ilovexy.xyz/2020/03/16/first-page/"/>
+    <id>https://ilovexy.xyz/2020/03/16/first-page/</id>
+    <published>2020-03-16T15:36:37.000Z</published>
+    <updated>2020-03-30T13:27:59.974Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>做一个爱老婆的好程序员，写的第一篇博客当然要先向我美丽又可爱的老婆说两句。</p><p><strong>我觉得上帝让我遇见你，是让我去做我这一生当中最正确的一个决定，也是我这一辈子最幸福的事，就是娶你。老婆，我爱你。(๑′ᴗ‵๑)Ｉ Lᵒᵛᵉᵧₒᵤ❤</strong></p><p>话不多说，就两句<img src="https://i.loli.net/2020/03/30/HuY3m6Qa9osqI1R.gif" alt="18095461.gif"></p><p>再说说开这个博客要干嘛，好程序员嘛</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;做一个爱老婆的好程序员，写的第一篇博客当然要先向我美丽又可爱的老婆说两句。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我觉得上帝让我遇见你，是让我去做我这一生当中最正确
+      
+    
+    </summary>
+    
+    
+      <category term="xy" scheme="https://ilovexy.xyz/categories/xy/"/>
+    
+    
+      <category term="xy" scheme="https://ilovexy.xyz/tags/xy/"/>
+    
+  </entry>
+  
+</feed>
