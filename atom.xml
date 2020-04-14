@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ilovexy.xyz/"/>
-  <updated>2020-03-31T23:45:29.883Z</updated>
+  <updated>2020-04-14T12:41:22.374Z</updated>
   <id>https://ilovexy.xyz/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS实现国密SM2，兼容IE</title>
+    <link href="https://ilovexy.xyz/2020/04/13/sm2/"/>
+    <id>https://ilovexy.xyz/2020/04/13/sm2/</id>
+    <published>2020-04-13T12:36:26.000Z</published>
+    <updated>2020-04-14T12:41:22.374Z</updated>
+    
+    <content type="html"><![CDATA[<p>前段时间项目需要使用<strong>SM2</strong>，流程是前端使用<strong>JS</strong>对密码加密，传输到后端使用<strong>Java</strong>解密</p><p><strong>Java</strong>版本实现的<strong>SM2</strong>比较多，之前项目中也使用过，没有问题</p><p><strong>JS</strong>版本使用的是在<strong>Github</strong>上找到的 <a href="https://github.com/44021987/smEncrypt" target="_blank" rel="noopener">smEncrypt</a></p><p><strong>Chrome</strong>测试没问题，但是在<strong>IE 11</strong>中提示<code>“smEncrypt”未定义</code></p><p>由于对<strong>JS</strong>不是很了解，自己折腾了一会无效，无奈请朋友帮忙解决</p><p>据说解决过程挺毒<img src="https://i.loli.net/2020/04/14/gO35Xudn4Kaio12.png" alt="img"></p><p><a href="https://ilovexy.xyz/sm2.html">使用示例</a></p><p><a href="https://github.com/2545583308/sm2" target="_blank" rel="noopener">完整代码</a></p><hr><div  align="center">  <strong>如果这篇文章对您有帮助，请点击底部支持按钮，进入<a href="https://ilovexy.xyz/tb.html" target="_blank" rel="noopener">我的淘宝小店</a>，欢迎关注选购</strong><br/>  <img src="https://i.loli.net/2020/04/14/ixFWBkJqK2z1ILD.gif" /></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前段时间项目需要使用&lt;strong&gt;SM2&lt;/strong&gt;，流程是前端使用&lt;strong&gt;JS&lt;/strong&gt;对密码加密，传输到后端使用&lt;strong&gt;Java&lt;/strong&gt;解密&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Java&lt;/strong&gt;版本实现的&lt;strong&gt;SM
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="https://ilovexy.xyz/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="加密" scheme="https://ilovexy.xyz/tags/%E5%8A%A0%E5%AF%86/"/>
+    
+      <category term="sm2" scheme="https://ilovexy.xyz/tags/sm2/"/>
+    
+      <category term="js" scheme="https://ilovexy.xyz/tags/js/"/>
+    
+      <category term="国密" scheme="https://ilovexy.xyz/tags/%E5%9B%BD%E5%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>第一篇博客</title>

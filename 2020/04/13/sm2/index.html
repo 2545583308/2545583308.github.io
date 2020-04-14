@@ -17,25 +17,27 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>第一篇博客 | ilovexy</title>
-  <meta name="description" content="做一个爱老婆的好程序员，写的第一篇博客当然要先向我美丽又可爱的老婆说两句。 我觉得上帝让我遇见你，是让我去做我这一生当中最正确的一个决定，也是我这一辈子最幸福的事，就是娶你。老婆，我爱你。(๑′ᴗ‵๑)Ｉ Lᵒᵛᵉᵧₒᵤ❤ 话不多说，就两句 再说说开这个博客要干嘛，好程序员嘛，免不了学习怎么写bug，在此记录一下。 还有就是平时爱好折腾，碰到有意思的事物也会在这里分享出来。 以上，欢迎交流。">
+  <title>JS实现国密SM2，兼容IE | ilovexy</title>
+  <meta name="description" content="前段时间项目需要使用SM2，流程是前端使用JS对密码加密，传输到后端使用Java解密 Java版本实现的SM2比较多，之前项目中也使用过，没有问题 JS版本使用的是在Github上找到的 smEncrypt Chrome测试没问题，但是在IE 11中提示“smEncrypt”未定义 由于对JS不是很了解，自己折腾了一会无效，无奈请朋友帮忙解决 据说解决过程挺毒 使用示例 完整代码     如果这篇">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇博客">
-<meta property="og:url" content="https://ilovexy.xyz/2020/03/16/first-page/index.html">
+<meta property="og:title" content="JS实现国密SM2，兼容IE">
+<meta property="og:url" content="https://ilovexy.xyz/2020/04/13/sm2/index.html">
 <meta property="og:site_name" content="ilovexy">
-<meta property="og:description" content="做一个爱老婆的好程序员，写的第一篇博客当然要先向我美丽又可爱的老婆说两句。 我觉得上帝让我遇见你，是让我去做我这一生当中最正确的一个决定，也是我这一辈子最幸福的事，就是娶你。老婆，我爱你。(๑′ᴗ‵๑)Ｉ Lᵒᵛᵉᵧₒᵤ❤ 话不多说，就两句 再说说开这个博客要干嘛，好程序员嘛，免不了学习怎么写bug，在此记录一下。 还有就是平时爱好折腾，碰到有意思的事物也会在这里分享出来。 以上，欢迎交流。">
+<meta property="og:description" content="前段时间项目需要使用SM2，流程是前端使用JS对密码加密，传输到后端使用Java解密 Java版本实现的SM2比较多，之前项目中也使用过，没有问题 JS版本使用的是在Github上找到的 smEncrypt Chrome测试没问题，但是在IE 11中提示“smEncrypt”未定义 由于对JS不是很了解，自己折腾了一会无效，无奈请朋友帮忙解决 据说解决过程挺毒 使用示例 完整代码     如果这篇">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://i.loli.net/2020/03/30/HuY3m6Qa9osqI1R.gif">
-<meta property="og:image" content="https://i.loli.net/2020/03/30/usMEKvNP4dYaqpS.gif">
-<meta property="og:image" content="https://i.loli.net/2020/03/30/usMEKvNP4dYaqpS.gif">
-<meta property="article:published_time" content="2020-03-16T15:36:37.000Z">
-<meta property="article:modified_time" content="2020-03-31T23:45:29.883Z">
+<meta property="og:image" content="https://i.loli.net/2020/04/14/gO35Xudn4Kaio12.png">
+<meta property="og:image" content="https://i.loli.net/2020/04/14/ixFWBkJqK2z1ILD.gif">
+<meta property="article:published_time" content="2020-04-13T12:36:26.000Z">
+<meta property="article:modified_time" content="2020-04-14T12:41:22.374Z">
 <meta property="article:author" content="Chaos">
-<meta property="article:tag" content="xy">
+<meta property="article:tag" content="加密">
+<meta property="article:tag" content="sm2">
+<meta property="article:tag" content="js">
+<meta property="article:tag" content="国密">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2020/03/30/HuY3m6Qa9osqI1R.gif">
+<meta name="twitter:image" content="https://i.loli.net/2020/04/14/gO35Xudn4Kaio12.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://ilovexy.xyz/2020/03/16/first-page/index.html">
+  <link rel="canonical" href="https://ilovexy.xyz/2020/04/13/sm2/index.html">
   
     <link rel="alternate" href="/atom.xml" title="ilovexy" type="application/atom+xml">
   
@@ -283,14 +285,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-first-page" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-sm2" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      第一篇博客
+      JS实现国密SM2，兼容IE
     </h1>
   
 
@@ -298,20 +300,20 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/03/16/first-page/" class="article-date">
-	  <time datetime="2020-03-16T15:36:37.000Z" itemprop="datePublished">2020-03-16</time>
+	<a href="/2020/04/13/sm2/" class="article-date">
+	  <time datetime="2020-04-13T12:36:26.000Z" itemprop="datePublished">2020-04-13</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/xy/">xy</a>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/xy/" rel="tag">xy</a>
+	<a class="article-tag-link" href="/tags/js/" rel="tag">js</a>, <a class="article-tag-link" href="/tags/sm2/" rel="tag">sm2</a>, <a class="article-tag-link" href="/tags/%E5%8A%A0%E5%AF%86/" rel="tag">加密</a>, <a class="article-tag-link" href="/tags/%E5%9B%BD%E5%AF%86/" rel="tag">国密</a>
   </span>
 
 
@@ -319,13 +321,13 @@
 
 	<span class="article-read hidden-xs">
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="/2020/03/16/first-page/" class="leancloud_visitors"  data-flag-title="第一篇博客">0</span>
+    	<span id="/2020/04/13/sm2/" class="leancloud_visitors"  data-flag-title="JS实现国密SM2，兼容IE">0</span>
     </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/03/16/first-page/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/04/13/sm2/#comments" class="article-comment-link">评论</a></span>
         
 	
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 157(字)</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 164(字)</span>
 	
 	
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1(分)</span>
@@ -335,14 +337,19 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>做一个爱老婆的好程序员，写的第一篇博客当然要先向我美丽又可爱的老婆说两句。</p>
-<p><strong>我觉得上帝让我遇见你，是让我去做我这一生当中最正确的一个决定，也是我这一辈子最幸福的事，就是娶你。老婆，我爱你。(๑′ᴗ‵๑)Ｉ Lᵒᵛᵉᵧₒᵤ❤</strong></p>
-<p>话不多说，就两句<img src="https://i.loli.net/2020/03/30/HuY3m6Qa9osqI1R.gif" alt="18095461.gif"></p>
-<p>再说说开这个博客要干嘛，好程序员嘛，免不了学习怎么写bug，在此记录一下。</p>
-<p>还有就是平时爱好折腾，碰到有意思的事物也会在这里分享出来。</p>
-<p>以上，欢迎交流。</p>
-<p><img src="https://i.loli.net/2020/03/30/usMEKvNP4dYaqpS.gif" alt="bye"> <img src="https://i.loli.net/2020/03/30/usMEKvNP4dYaqpS.gif" alt="bye"></p>
-
+        <p>前段时间项目需要使用<strong>SM2</strong>，流程是前端使用<strong>JS</strong>对密码加密，传输到后端使用<strong>Java</strong>解密</p>
+<p><strong>Java</strong>版本实现的<strong>SM2</strong>比较多，之前项目中也使用过，没有问题</p>
+<p><strong>JS</strong>版本使用的是在<strong>Github</strong>上找到的 <a href="https://github.com/44021987/smEncrypt" target="_blank" rel="noopener">smEncrypt</a></p>
+<p><strong>Chrome</strong>测试没问题，但是在<strong>IE 11</strong>中提示<code>“smEncrypt”未定义</code></p>
+<p>由于对<strong>JS</strong>不是很了解，自己折腾了一会无效，无奈请朋友帮忙解决</p>
+<p>据说解决过程挺毒<img src="https://i.loli.net/2020/04/14/gO35Xudn4Kaio12.png" alt="img"></p>
+<p><a href="https://ilovexy.xyz/sm2.html">使用示例</a></p>
+<p><a href="https://github.com/2545583308/sm2" target="_blank" rel="noopener">完整代码</a></p>
+<hr>
+<div  align="center">
+  <strong>如果这篇文章对您有帮助，请点击底部支持按钮，进入<a href="https://ilovexy.xyz/tb.html" target="_blank" rel="noopener">我的淘宝小店</a>，欢迎关注选购</strong><br/>
+  <img src="https://i.loli.net/2020/04/14/ixFWBkJqK2z1ILD.gif" />
+</div>
       
     </div>
     <div class="article-footer">
@@ -351,7 +358,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://ilovexy.xyz/2020/03/16/first-page/" title="第一篇博客" target="_blank" rel="external">https://ilovexy.xyz/2020/03/16/first-page/</a>
+      <a href="https://ilovexy.xyz/2020/04/13/sm2/" title="JS实现国密SM2，兼容IE" target="_blank" rel="external">https://ilovexy.xyz/2020/04/13/sm2/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -397,10 +404,10 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2020/04/13/sm2/" title="JS实现国密SM2，兼容IE"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
     
+    <li class="next">
+      <a href="/2020/03/16/first-page/" title="第一篇博客"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
     
   </ul>
